@@ -44,7 +44,7 @@ function App() {
           <button className='btn' onClick={() => getProduct('kitten-mittens')}>Kitten Mittens</button>
           <button className='btn' onClick={() => getProduct('doggles')}>Doggles</button>
           <button className='btn' onClick={() => getProduct('clown-shoes')}>Clown Shoes</button>
-          <button className='btn' onClick={() => getProduct('nonfat-water')}>Nonfat Water</button>
+          <button className='btn' onClick={() => getProduct('debug-sentry')}>Nonfat Water</button>
         </div>
         <p>
           This is a React App
