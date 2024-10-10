@@ -8,16 +8,6 @@ function App() {
   const [data, setData] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
 
-  // function getKittenMittens() {
-  //   fetch('http://localhost:3001/products/kitten-mittens/')
-  //     .then(response => (console.log('response',response)))
-  //     .then(response => response.json())
-  //     .then(response => (console.log('jsonresponse', response)))
-  //     .then(json => setData(json))
-  //     .then(console.log('data', data))
-  //     .catch(error => console.error(error));
-  // }
-
   async function getProduct(slug) {
     setData(null);
     const url = `http://localhost:3001/products/${slug}/`;
@@ -32,6 +22,9 @@ function App() {
       setData(json);
     } catch (error) {
       console.error(error.message);
+      console.error('Error on the frontend!');
+      console.log('frontend error');
+      throw error;
     }
     modalOpen === false && toggleModal();
   }
