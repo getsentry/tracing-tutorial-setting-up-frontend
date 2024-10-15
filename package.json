@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sentry/browser": "^8.34.0",
     "@sentry/cli": "^2.36.3",
     "@sentry/react": "^8.32.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -39,3 +40,4 @@
     ]
   }
 }
+

@@ -23,4 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Sentry Config File
+<<<<<<< HEAD
 .sentryclirc
+=======
+.sentryclirc
+>>>>>>> d4860db (Move in more project files)

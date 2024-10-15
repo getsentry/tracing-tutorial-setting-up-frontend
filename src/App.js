@@ -22,8 +22,7 @@ function App() {
       setData(json);
     } catch (error) {
       console.error(error.message);
-      console.error('Error on the frontend!');
-      console.log('frontend error');
+      console.log('Sentry Frontend Error!');
       throw error;
     }
     modalOpen === false && toggleModal();
@@ -66,7 +65,7 @@ function App() {
             </button>
           </div>
           <div className="btn-parent">
-            <button className="btn" onClick={() => getProduct("debug-sentry")}>
+            <button className="btn" onClick={() => getProduct("nonfat-water")}>
               Nonfat Water
             </button>
           </div>
